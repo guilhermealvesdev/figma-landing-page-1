@@ -1,0 +1,62 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html {
+    font-size:62.5%;
+}
+
+body {
+    min-height:100vh;
+    font-family: 'Inter', sans-serif;
+    background:linear-gradient(222.26deg, #3B1D60 1.22%, #040D3E 106.28%);    
+}
+
+.hoverEffect {
+    transition: opacity .3s ease-out;
+
+    &:hover {
+        opacity: .8;
+    }
+}
+
+.container {
+    width:100%;
+    max-width:130rem;
+    margin:0 auto;
+    
+    @include mq($until:wide) {
+        padding: 0 1.5rem;
+    }
+
+    h1 {
+        font-size:2rem;
+    }
+}
+
+.btn {
+    border-width:2px;
+    border-style:solid;
+    border-radius:5px;
+    font-size:1.3rem;
+    padding:.8rem 2.6rem;
+    text-decoration:none;
+    letter-spacing:1px;
+    font-weight:700;
+    text-align:center;
+
+    &-primary {
+        background-color:$color-primary;
+        border-color:$color-primary;
+        color:#FFFFFF;
+    }
+
+    &-secondary {
+        border-color:$color-primary;
+        color:$color-primary;
+    }
+}

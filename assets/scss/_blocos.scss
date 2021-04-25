@@ -1,0 +1,113 @@
+﻿.header {
+    &__caixa {
+        display:flex;
+        flex-flow: column wrap;
+        padding-top:1rem;
+        gap:20px;
+        
+        @include mq($from:tablet) {
+            flex-flow: row;
+            justify-content:space-between;
+            padding-top:8rem;
+            gap:0px;
+        }
+    }
+
+    &__menu {
+        display:flex;
+        flex-flow: column wrap;
+
+        @include mq($from:tablet) {
+            width:430px;
+            flex-flow:row;
+            align-items:center;
+        }
+    }
+
+    &__botao-menu {
+        cursor:pointer;
+        background-color:$color-primary;
+        color:#FFFFFF;
+        width:36px;
+        height:36px;
+        border-radius:50%;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        flex-flow:column wrap;
+        gap:4px;
+
+        @include mq($from:tablet) {
+            margin-right:44px;
+        }
+
+        &::before, &::after {
+            content:"";
+            background-color:#FFFFFF;
+            height:5px;
+            width:14px;
+            display:block;
+            border-radius:10px;
+        }
+    }
+
+    &__menu-links {
+        visibility:hidden;
+        position:relative;
+        left:-20px;
+        opacity:0;
+        transition: left .3s ease-out,
+                    visibility .3s ease-out,
+                    opacity .3s ease-out;
+
+        &.ativo {
+            visibility:visible;
+            opacity:1;
+            left:0px;
+        }
+
+        .lista-links {
+            display:flex;
+            gap:20px;
+            list-style-type: none;
+            flex-flow:column wrap;
+
+            @include mq($from:tablet) {
+                flex-flow:row;
+            }
+
+            &:hover {
+                .item {
+                    opacity:.3;
+                }
+            }
+
+            .item {
+                font-size:1.2rem;
+                transition: opacity .2s ease-out;
+
+                &:hover {
+                    opacity:1;
+                    filter:brightness(200%);
+                }
+
+                a {
+                    color:hsl(0, 0%, 71%);
+                    text-decoration:none;
+
+                    
+                }
+            }
+        }
+    }
+
+    &__login {
+        display:flex;
+        flex-flow:column wrap;
+        gap:20px;
+
+        @include mq($from:tablet) {
+            flex-flow: row wrap;
+        }
+    }
+}
