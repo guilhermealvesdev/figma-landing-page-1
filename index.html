@@ -1,64 +1,164 @@
 ﻿<!DOCTYPE html>
 <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <script src="./assets/js/scripts.js" defer></script>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <script src="./assets/js/scripts.js" defer></script>
+        <title>Landing Page Figma #1</title>
+    </head>
 
-    <title>Landing Page Figma #1</title>
-</head>
-
-<body>
-    <header class="header">
-        <div class="container">
-            <div class="header__caixa">
-                <div class="header__menu">
-                    <div class="header__botao-menu" data-botao-menu>
-                        <!--Botão do menu-->
-                    </div>
-
-                    <nav class="header__menu-links" data-menu-links>
-                        <ul class="lista-links">
-                            <li class="item"><a href="#">ABOUT</a></li>
-                            <li class="item"><a href="#">GALLERY</a></li>
-                            <li class="item"><a href="#">PRICING</a></li>
-                            <li class="item"><a href="#">FAQ</a></li>
-                            <li class="item"><a href="#">BENEFITS</a></li>
-                        </ul>
-                        <div class="header__login">
-                            <a href="#" class="btn btn-secondary btn-effect">SIGN IN</a>
-                            <a href="#" class="btn btn-primary btn-effect">SIGN UP</a>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header__caixa">
+                    <div class="header__menu">
+                        <div class="header__botao-menu" data-botao-menu>
+                            <!--Botão do menu-->
                         </div>
-                    </nav>
+
+                        <nav class="header__menu-links" data-menu-links>
+                            <ul class="lista-links">
+                                <li class="item"><a href="#about">ABOUT</a></li>
+                                <li class="item">
+                                    <a href="#gallery">GALLERY</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#pricing">PRICING</a>
+                                </li>
+                                <li class="item"><a href="#faq">FAQ</a></li>
+                                <li class="item">
+                                    <a href="#benefits">BENEFITS</a>
+                                </li>
+                            </ul>
+                            <div class="header__login">
+                                <a href="#" class="btn btn-secondary btn-effect">SIGN IN</a>
+                                <a href="#" class="btn btn-primary btn-effect">SIGN UP</a>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="header__hero">
+                    <div class="texto">
+                        <h1 class="titulo">Many reasons to get up and start to get back in the business</h1>
+                        <h2 class="subtitulo">
+                            The harder you work for something, the greater you’ll feel when you achieve it.
+                        </h2>
+
+                        <div class="botoes">
+                            <a href="" class="btn btn-primary btn-effect">LEARN MORE</a>
+                            <a href="" class="btn btn-secondary btn-effect">VIEW DEMO</a>
+                        </div>
+
+                        <div class="chamada-video">
+                            <img src="./assets/img/video-thumbnail.png" alt="Thumbnail de vídeo" />
+                            <div class="chamada-video__caixa-texto">
+                                <p class="chamada-video__texto">
+                                    The harder you work for something, the greater you’ll feel when you achieve it.
+                                </p>
+                                <a href="#" class="chamada-video__link hoverEffect">Watch preview</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-img-caixa">
+                        <img class="hero-img" src="./assets/img/hero.png" alt="Imagem de contorno de pessoa correndo" />
+                    </div>
+                </div>
+
+                <div class="header__parceiros">
+                    <a class="link" href="#ProfitWell">
+                        <img src="./assets/img/parceiros/profitwell.png" alt="ProfitWell" />
+                    </a>
+                    <a class="link" href="#appcues">
+                        <img src="./assets/img/parceiros/appcues.png" alt="Appcues" />
+                    </a>
+                    <a class="link" href="#shipbob">
+                        <img src="./assets/img/parceiros/shipbob.png" alt="ShipBob" />
+                    </a>
+                    <a class="link" href="#bench">
+                        <img src="./assets/img/parceiros/bench.png" alt="Bench" />
+                    </a>
+                    <a class="link" href="#subbly">
+                        <img src="./assets/img/parceiros/subbly.png" alt="Subbly" />
+                    </a>
+                    <a class="link" href="#demio">
+                        <img src="./assets/img/parceiros/demio.png" alt="demio" />
+                    </a>
                 </div>
             </div>
+        </header>
 
-            <div class="header__hero">
-                <div class="texto">
-                    <h1 class="titulo">Many reasons to get up and start to get back in the business</h1>
-                    <h2 class="subtitulo">The harder you work for something, the greater you’ll feel when you achieve it.</h2>
+        <section class="reasons">
+            <div class="container">
+                <h2 class="titulo titulo--secao">Your choice</h2>
+                <h3 class="subtitulo subtitulo--secao">
+                    There are many reasons to get down and start to get depressed about your situation.
+                </h3>
 
-                    <div class="botoes">
-                        <a href="" class="btn btn-primary btn-effect">LEARN MORE</a>
-                        <a href="" class="btn btn-secondary btn-effect">VIEW DEMO</a>
+                <div class="reasons__grid">
+                    <div class="reasons__item">
+                        <img src="./assets/img/icones/01.png" alt="Ícone de metrônomo" />
+                        <div class="reasons__info">
+                            <h4 class="reasons__titulo">Ecstatic elegance</h4>
+                            <p class="reasons__texto">
+                                Article nor prepare chicken you him now. Shy merits say advice ten before lovers innate
+                                add.
+                            </p>
+                        </div>
                     </div>
-
-                    <div class="chamada-video">
-                        <img src="./assets/img/video-thumbnail.png" alt="Thumbnail de vídeo" />
-                        <div class="chamada-video__caixa-texto">
-                            <p class="chamada-video__texto">The harder you work for something, the greater you’ll feel when you achieve it.</p>
-                            <a href="#" class="chamada-video__link hoverEffect">Watch preview</a>
+                    <div class="reasons__item">
+                        <img src="./assets/img/icones/02.png" alt="Ícone de fones de ouvido" />
+                        <div class="reasons__info">
+                            <h4 class="reasons__titulo">Folly words widow</h4>
+                            <p class="reasons__texto">
+                                Effect if in up no depend seemed. Ecstatic elegance gay but disposed. We me rent been
+                                part what.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="reasons__item">
+                        <img src="./assets/img/icones/03.png" alt="Ícone de rádio" />
+                        <div class="reasons__info">
+                            <h4 class="reasons__titulo">Possible procured trifling</h4>
+                            <p class="reasons__texto">
+                                We me rent been part what. An concluded sportsman offending so provision mr education.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="reasons__item">
+                        <img src="./assets/img/icones/04.png" alt="Ícone de raio" />
+                        <div class="reasons__info">
+                            <h4 class="reasons__titulo">Open game</h4>
+                            <p class="reasons__texto">
+                                Shy merits say advice ten before lovers innate add. She cordially behaviour can
+                                attempted estimable.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="reasons__item">
+                        <img src="./assets/img/icones/05.png" alt="Ícone de ímã" />
+                        <div class="reasons__info">
+                            <h4 class="reasons__titulo">Endeavor</h4>
+                            <p class="reasons__texto">
+                                Improve ashamed married expense bed her comfort pursuit mrs. Four time took ye your as
+                                fail lady.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="reasons__item">
+                        <img src="./assets/img/icones/06.png" alt="Ícone de lâmpada" />
+                        <div class="reasons__info">
+                            <h4 class="reasons__titulo">Comfort pursuit</h4>
+                            <p class="reasons__texto">
+                                Had denoting properly jointure you occasion directly raillery. In said to of poor full
+                                be post face snug.
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="hero-img-caixa">
-                    <img class="hero-img" src="./assets/img/hero.png" alt="Imagem de contorno de pessoa correndo" />
-                </div>
             </div>
-        </div>
-    </header>
-</body>
-
+        </section>
+    </body>
 </html>
